@@ -22,9 +22,9 @@
                 </div>
                 <div class="form-group">
                 <label for="" class="form control-label"> Nom Employe</label>
-                <input type="text" class="form-control" name="nomEMP">
+                <input type="text" class="form-control" name="nomEMP" placeholder="veillez enregistrer votre nom">
                    <?php  if(!empty($_POST['nomEMP'])){
-                       $post_ror="le nom ne doit pa etre vide";
+                     echo  $post_ror="le nom ne doit pa etre vide";
                        
                    }
                    ?>
@@ -32,11 +32,11 @@
                 
                 <div class="form-group">
                 <label for="" class="form control-label"> Preom Employe</label>
-                <input type="text" class="form-control" name="prenomEMP" >
+                <input type="text" class="form-control" name="prenomEMP" placeholder="veillez enregistrer votre prenom" >
                 </div>
                 <div class="form-group">
                 <label for="" class="form control-label"> date Naissance Employe</label>
-                <input type="text" class="form-control" name="dateNais">
+                <input type="text" class="form-control" name="dateNais" placeholder="exmple:20/10/1998">
                 <?php if(isset($_POST['date'])){
                     $date=$_POST['date'];
                     $tabledate=explode("/",$date);
@@ -48,7 +48,7 @@
                 </div>
                 <div class="form-group">
                 <label for="" class="form control-label">Salaire Employe</label>
-                <input type="text" class="form-control" name="salaireEMP">
+                <input type="text" class="form-control" name="salaireEMP" placeholder="salaire entre 25000-200000">
                                 <?php
                     if(isset($_POST['salaire'])){
                         $salaire=$_POST['salaire'];
@@ -66,7 +66,7 @@
                 </div>
                 <div class="form-group">
                 <label for="" class="form control-label">Tel Employe</label>
-                <input type="text" class="form-control" name="telEMP">
+                <input type="text" class="form-control" name="telEMP" placeholder="saisir un bon format exemple:772506225">
                 <?php
                     if(isset($_POST['tel'])){
                     
@@ -83,7 +83,7 @@
                 </div>
                 <div class="form-group">
                 <label for="" class="form control-label"> email Employe</label>
-                <input type="text" class="form-control" name="emailEMP">
+                <input type="text" class="form-control" name="emailEMP" placeholder=" sous format:samate015@gmail.com">
                 </div>
                 <input  class="btn btn-success" type="submit" value="Envoyer" name="Enregistre">
                 <input  class="btn btn-danger" type="reset" value="Annuler" name="Annuler">
